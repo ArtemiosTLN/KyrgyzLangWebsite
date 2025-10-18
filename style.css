@@ -7,6 +7,7 @@ body {
 }
 header, footer {
     background-color: #e17a7a;
+    color: #ffffff;
     padding: 20px;
     text-align: center;
 }
@@ -42,6 +43,10 @@ header .menu_main_button {
     padding: 8px 16px;
     display: block;
 }
+header .menu_main_button:hover {
+    background: #9c3030;
+    border-radius: 4px;
+}
 header .submenu {
     display: none;
     position: absolute;
@@ -61,6 +66,9 @@ header .menu_sub_button {
     color: #9c3030;
     text-decoration: none;
 }
+header .menu_sub_button:hover {
+    background: #f0f0f0;
+}
 main {
     flex: 1;
     display: flex;
@@ -74,4 +82,31 @@ main {
     padding: 30px;
     background: #ffffff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.side_menu {
+    position: absolute;
+    left: 40px;
+    height: calc(100% - 100px);
+    padding-top: 20px;
+}
+.side_menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.side_menu li {
+    margin-bottom: 10px;
+}
+.side_menu a, .side_menu p {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    display: block;
+}
+.side_menu a:hover, .side_menu p:hover {
+    background: #eee;
+}
+.side_menu ul ul {
+    display: none;
+    margin-left: 15px;
 }

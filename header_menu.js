@@ -9,11 +9,11 @@ document.querySelectorAll('nav ul > li').forEach(function(li) {
     });
 });
 
-document.querySelectorAll('.language_menu > li').forEach(function(li) {
-    li.addEventListener('click', function(e) {
+document.querySelectorAll('.language_menu > p').forEach(function(p) {
+    p.addEventListener('click', function(e) {
         e.stopPropagation();
 
-        var submenu = li.querySelector('.language_submenu');
+        var submenu = p.nextElementSibling;
         var isOpen = submenu && submenu.style.display === 'block';
 
         document.querySelectorAll('.language_submenu').forEach(function(sub) {

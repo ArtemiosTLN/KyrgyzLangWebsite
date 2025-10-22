@@ -85,7 +85,7 @@ main {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
 }
 .main-text {
     width: 60%;
@@ -94,6 +94,9 @@ main {
     padding: 30px;
     background: #ffffff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    line-height: 1.6;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .language_menu {
     position: absolute;
@@ -103,6 +106,7 @@ main {
     border: #fdab13 1px solid;
     justify-content: center;
     padding: 0px 16px;
+    cursor: pointer;
 }
 .language_menu:hover {
     background: #9c3030;
@@ -111,23 +115,19 @@ main {
 .side_menu {
     position: absolute;
     left: 20px;
-    height: calc(100% - 100px);
     padding-top: 20px;
     cursor: pointer;
+    overflow: visible;
 }
 .side_menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.side_menu li {
-    margin-bottom: 10px;
-}
 .side_menu li > p {
     display: flex;
     justify-content: space-between;
 }
-
 .side_menu li > p::after {
     content: "▼";
     font-size: 12px;
@@ -148,9 +148,24 @@ main {
     background: #eee;
 }
 .side_submenu {
-    user-select: none;
     display: none;
+    position: absolute;
+    background-color: #da5555;
 }
 .side_submenu a {
-    border: #fdab13 1px solid;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: #fdab13 2px solid;
+}
+.side_submenu a:hover {
+    background-color: #c76c6c;
+}
+tr th, tr td {
+    border:1px solid #9c3030;
+    padding:8px;
+    text-align: center;
+}
+tr {
+    border: #9c3030 1.5px solid;
 }

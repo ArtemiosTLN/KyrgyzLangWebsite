@@ -3,72 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Кыргызский язык с нуля - Главная</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1 class="site_name"><a href="main.html">Кыргызский язык</a></h1>
-            <ul class="header_menu">
-                <li style="position: relative;">
-                    <a href="#" class="menu_main_button">1</a>
-                    <ul class="submenu">
-                        <li><a href="#" class="menu_sub_button">Опция 1.1</a></li>
-                        <li><a href="#" class="menu_sub_button">Опция 1.2</a></li>
-                    </ul>
-                </li>
-                <li style="position: relative;">
-                    <a href="#" class="menu_main_button">2</a>
-                    <ul class="submenu">
-                        <li><a href="#" class="menu_sub_button">Опция 2.1</a></li>
-                        <li><a href="#" class="menu_sub_button">Опция 2.2</a></li>
-                    </ul>
-                </li>
-                <li style="position: relative;">
-                    <a href="#" class="menu_main_button">3</a>
-                    <ul class="submenu">
-                        <li><a href="#" class="menu_sub_button">Опция 3.1</a></li>
-                        <li><a href="#" class="menu_sub_button">Опция 3.2</a></li>
-                    </ul>
-                </li>
-                <li style="position: relative;">
-                    <a href="#" class="menu_main_button">4</a>
-                    <ul class="submenu">
-                        <li><a href="#" class="menu_sub_button">Опция 4.1</a></li>
-                        <li><a href="#" class="menu_sub_button">Опция 4.2</a></li>
-                    </ul>
-                </li>
-                <li style="position: relative;">
-                    <a href="#" class="menu_main_button">5</a>
-                    <ul class="submenu">
-                        <li><a href="#" class="menu_sub_button">Опция 5.1</a></li>
-                        <li><a href="#" class="menu_sub_button">Опция 5.2</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="language_menu">
-                <p>Русский ▼</p>
-                <ul class="language_submenu">
-                    <li><a href="../kg/main.html">Кыргызча (WIP)</a></li>
-                    <li><a href="../en/main.html">English (WIP)</a></li>
-                </ul>
-            </ul>
-            <script src="../header_menu.js"></script>
-        </nav>
-    </header>
+    <site-header></site-header>
     <main>
         <nav class="side_menu">
             <ul>
                 <li>
-                    <p>Письменность</p>
+                    <p class="side_menu_button" >Письменность</p>
                     <ul class="side_submenu">
-                        <li><a href="alphabet.html">Алфавит</a></li>
+                        <li><a href="/ru/alphabet_ru.html">Алфавит</a></li>
                         <li><a href="#">Гласные</a></li>
                         <li><a href="#">Согласные</a></li>
                     </ul>
                 </li>
                 <li>
-                    <p>Части речи</p>
+                    <p class="side_menu_button">Части речи</p>
                     <ul class="side_submenu">
                         <li><a href="#">Существительные</a></li>
                         <li><a href="#">Глаголы</a></li>
@@ -79,28 +30,28 @@
                     </ul>
                 </li>
                 <li>
-                    <p>Грамматика</p>
+                    <p class="side_menu_button">Грамматика</p>
                     <ul class="side_submenu">
                         <li><a href="#">Подраздел 3.1</a></li>
                         <li><a href="#">Подраздел 3.2</a></li>
                     </ul>
                 </li>
                 <li>
-                    <p>Раздел 4</p>
+                    <p class="side_menu_button">Раздел 4</p>
                     <ul class="side_submenu">
                         <li><a href="#">Подраздел 4.1</a></li>
                         <li><a href="#">Подраздел 4.2</a></li>
                     </ul>
                 </li>
                 <li>
-                    <p>Раздел 5</p>
+                    <p class="side_menu_button">Раздел 5</p>
                     <ul class="side_submenu">
                         <li><a href="#">Подраздел 5.1</a></li>
                         <li><a href="#">Подраздел 5.2</a></li>
                     </ul>
                 </li>
             </ul>
-            <script src="../side_menu.js"></script>
+            <script src="/side_menu.js"></script>
         </nav>
         <div class="main-text">
             <h3>Добро пожаловать на сайт для изучения кыргызского языка!</h3>
@@ -109,15 +60,7 @@
             Сайт может быть использован как для самостоятельного изучения, так и в качестве дополнительного материала для изучающих кыргызский язык в школе.</p>
         </div>
     </main>
-    <footer>
-        <nav class="footer_menu">
-            <ul>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Ваши предложения</a></li>
-            </ul>
-        </nav>
-        <p>2025 Кыргызский язык с нуля</p>
-    </footer>
+    <site-footer></site-footer>
+    <script src="/ru/elements_ru.js"></script>
 </body>
 </html>

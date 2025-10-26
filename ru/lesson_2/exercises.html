@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Кыргызский язык с нуля - Урок 1 - Упражнения</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <site-header></site-header>
+    <main>
+        <nav class="side_menu">
+            <ul>
+                <button onclick="window.history.back()">← Назад</button>
+                <li>
+                    <a href="/ru/lesson_1/overview.html">Обзор</a>
+                </li>
+                <li>
+                    <a href="/ru/lesson_1/reading.html">Чтение</a>
+                </li>
+                <li>
+                    <a href="/ru/lesson_1/grammar.html">Грамматика</a>
+                </li>
+                <li>
+                    <p style="background-color: #fdab13;">Упражнения</p>
+                </li>
+            </ul>
+            <script src="/side_menu.js"></script>
+        </nav>
+        <div class="main-text">
+            <h3>Упражнение 1</h3>
+            <p>Расположите слова в правильном порядке:</p>
+            <p>Не все слова из этого задания сейчас вам известны, но смысл упражнения в том, 
+                чтобы оснвываясь на имеющихся знаниях понять какой частью речи является каждое слово.</p>
+            <div class="exercise-dnd" data-words="Мен,студентмин">
+                <div class="slots-container"></div>
+                <div class="words-container"></div>
+                <button class="check-btn">Проверить</button>
+                <button class="reset-btn">Сбросить</button>
+                <span class="score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/2</span>
+            </div>
+            <br><br><br>
+            <div class="exercise-dnd" data-words="Ал,китеп,окуйт">
+                <div class="slots-container"></div>
+                <div class="words-container"></div>
+                <button class="check-btn">Проверить</button>
+                <button class="reset-btn">Сбросить</button>
+                <span class="score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/3</span>
+            </div>
+            <br><br><br>
+            <div class="exercise-dnd" data-words="Сиз,жакшы,мугалимсиз">
+                <div class="slots-container"></div>
+                <div class="words-container"></div>
+                <button class="check-btn">Проверить</button>
+                <button class="reset-btn">Сбросить</button>
+                <span class="score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/3</span>
+            </div><br><br><br>
+            <div class="exercise-dnd" data-words="Ооба,силер,университетте,жакшы,окуйсуңар">
+                <div class="slots-container"></div>
+                <div class="words-container"></div>
+                <button class="check-btn">Проверить</button>
+                <button class="reset-btn">Сбросить</button>
+                <span class="score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/5</span>
+            </div><br><br><br>
+            <div class="exercise-dnd" data-words="Биз,кыргыз,тилинде,жаман,сүйлөйбүз">
+                <div class="slots-container"></div>
+                <div class="words-container"></div>
+                <button class="check-btn">Проверить</button>
+                <button class="reset-btn">Сбросить</button>
+                <span class="score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/5</span>
+            </div>
+            <script src="/ru/lesson_1/exercise-dnd.js"></script>
+        </div>
+    </main>
+    <site-footer></site-footer>
+    <script src="/ru/elements_ru.js"></script>
+</body>
+</html>

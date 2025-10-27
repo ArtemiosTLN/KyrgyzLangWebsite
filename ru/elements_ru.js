@@ -78,13 +78,9 @@ class SiteHeader extends HTMLElement {
           var submenu = p.nextElementSibling;
           var isOpen = submenu && submenu.style.display === 'block';
 
-          this.querySelectorAll('.language_submenu').forEach(function(sub) {
-              sub.style.display = 'none';
-          });
-
           if (submenu && !isOpen) {
               submenu.style.display = 'block';
-          }
+          } else submenu.style.display = 'none';
       });
     });
   }

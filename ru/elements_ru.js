@@ -15,12 +15,12 @@ class SiteHeader extends HTMLElement {
                     </ul>
                 </li>
                 <li style="position: relative;">
-                    <a href="#" class="menu_main_button">2</a>
+                    <a href="/ru/lesson_2/overview.html" class="menu_main_button">2</a>
                     <ul class="submenu">
-                        <li><a href="#" class="menu_sub_button">Обзор</a></li>
-                        <li><a href="#" class="menu_sub_button">Чтение и словарный запас</a></li>
-                        <li><a href="#" class="menu_sub_button">Грамматика</a></li>
-                        <li><a href="#" class="menu_sub_button">Упражнения</a></li>
+                        <li><a href="/ru/lesson_2/overview.html" class="menu_sub_button">Обзор</a></li>
+                        <li><a href="/ru/lesson_2/reading.html" class="menu_sub_button">Чтение и словарный запас</a></li>
+                        <li><a href="/ru/lesson_2/grammar.html" class="menu_sub_button">Грамматика</a></li>
+                        <li><a href="/ru/lesson_2/exercises.html" class="menu_sub_button">Упражнения</a></li>
                     </ul>
                 </li>
                 <li style="position: relative;">

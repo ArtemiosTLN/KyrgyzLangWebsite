@@ -1,8 +1,9 @@
-document.querySelectorAll('.exercise-dnd').forEach((exercise, exIdx) => {
+document.querySelectorAll('.exercise-dnd').forEach((exercise) => {
     const words = exercise.dataset.words.split(',').sort(() => Math.random() - 0.5);
-    const correctOrder = exercise.dataset.words.split(',');
+    const correctOrder = exercise.dataset.order.split(',');
     let score = 0;
     let draggedWord = null;
+    let originSlot = null;
 
     const slotsContainer = exercise.querySelector('.slots-container');
     slotsContainer.innerHTML = '';
@@ -37,6 +38,7 @@ document.querySelectorAll('.exercise-dnd').forEach((exercise, exIdx) => {
     wordDivs.forEach(word => {
         word.addEventListener('dragstart', () => {
             draggedWord = word;
+            originSlot = word.parentElement && word.parentElement.classList.contains('slot') ? word.parentElement : null;
             setTimeout(() => word.style.visibility = 'hidden', 0);
         });
         word.addEventListener('dragend', () => {
@@ -54,28 +56,33 @@ document.querySelectorAll('.exercise-dnd').forEach((exercise, exIdx) => {
         });
         slot.addEventListener('drop', (e) => {
             e.preventDefault();
-            slot.style.borderColor = '#9c3030';
+            if (slot.firstChild && slot.firstChild !== draggedWord) {
+                slot.style.borderColor = '#9c3030';
+                return;
+            }
             if (draggedWord) {
-                if (slot.firstChild) {
-                    wordsContainer.appendChild(slot.firstChild);
+                if (originSlot && originSlot !== slot) {
+                    originSlot.classList.remove('filled');
+                    originSlot.style.width = '100px';
                 }
                 slot.appendChild(draggedWord);
                 slot.classList.add('filled');
                 slot.style.width = (draggedWord.offsetWidth + 24) + 'px';
+                originSlot = slot;
             }
+            slot.style.borderColor = '#9c3030';
         });
     });
 
     wordsContainer.addEventListener('dragover', (e) => e.preventDefault());
     wordsContainer.addEventListener('drop', () => {
         if (draggedWord) {
+            if (originSlot) {
+                originSlot.classList.remove('filled');
+                originSlot.style.width = '100px';
+                originSlot = null;
+            }
             wordsContainer.appendChild(draggedWord);
-            slots.forEach(slot => {
-                if (slot.contains(draggedWord)) {
-                    slot.classList.remove('filled');
-                    slot.style.width = '100px';
-                }
-            });
         }
     });
 
@@ -107,6 +114,7 @@ document.querySelectorAll('.exercise-dnd').forEach((exercise, exIdx) => {
         slots.forEach(slot => {
             slot.classList.remove('filled');
             slot.style.width = '100px';
+            slot.style.borderColor = '#9c3030';
         });
         score = 0;
         updateScoreText();

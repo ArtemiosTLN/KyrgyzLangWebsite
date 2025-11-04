@@ -325,6 +325,10 @@ button {
     color: #000000;
     border: 2px solid #fdab13;
 }
+.blank {
+    min-width: 30px;
+    max-width: 100px;
+}
 .blank.correct {
     border: 2px solid #2ecc40;
     background: #eaffea;

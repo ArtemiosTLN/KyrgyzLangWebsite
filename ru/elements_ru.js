@@ -3,7 +3,7 @@ class SiteHeader extends HTMLElement {
     this.innerHTML = `
       <header>
         <nav>
-            <h1 class="site_name"><a href="/">Кыргызский язык</a></h1>
+            <h1 class="site_name"><a href="/">KyrgyzEasy</a></h1>
             <ul class="header_menu">
                 <li style="position: relative;">
                     <a href="/ru/lesson_1/overview.html" class="menu_main_button">1</a>
@@ -93,12 +93,12 @@ class FooterSection extends HTMLElement {
     <footer>
       <nav class="footer_menu">
           <ul>
-              <li><a href="#">Контакты</a></li>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Ваши предложения</a></li>
+              <li><a href="/ru/about_us.html">Контакты</a></li>
+              <li><a href="/ru/about_us.html">О нас</a></li>
+              <li><a href="/ru/about_us.html">Ваши предложения</a></li>
           </ul>
       </nav>
-      <p>2025 Кыргызский язык с нуля</p>
+      <p>2025 KyrgyzEasy</p>
     </footer>`;
   }
 }

@@ -12,7 +12,7 @@ document.getElementById('check-blanks-btn').addEventListener('click', () => {
             blank.classList.add('incorrect');
         }
     });
-    document.getElementById('blanks-score-text').textContent = `Баллы: ${score}/10`;
+    document.getElementById('blanks-score-text').textContent = `Баллы: ${score}/${blanks.length}`;
 });
 
 document.getElementById('reset-blanks-btn').addEventListener('click', () => {

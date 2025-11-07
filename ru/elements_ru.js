@@ -3,7 +3,7 @@ class SiteHeader extends HTMLElement {
     this.innerHTML = `
       <header>
         <nav>
-            <h1 class="site_name"><a href="/">KyrgyzEasy</a></h1>
+            <h1 class="site_name"><a href="/"><img src="/logo.png" class="logo"></img>KyrgyzEasy</a></h1>
             <ul class="header_menu">
                 <li style="position: relative;">
                     <a href="/ru/lesson_1/overview.html" class="menu_main_button">1</a>
@@ -26,10 +26,10 @@ class SiteHeader extends HTMLElement {
                 <li style="position: relative;">
                     <a href="#" class="menu_main_button">3</a>
                     <ul class="submenu">
-                        <li><a href="#" class="menu_sub_button">Обзор</a></li>
-                        <li><a href="#" class="menu_sub_button">Грамматика</a></li>
-                        <li><a href="#" class="menu_sub_button">Чтение и словарный запас</a></li>
-                        <li><a href="#" class="menu_sub_button">Упражнения</a></li>
+                        <li><a href="/ru/lesson_3/overview.html" class="menu_sub_button">Обзор</a></li>
+                        <li><a href="/ru/lesson_3/grammar.html" class="menu_sub_button">Грамматика</a></li>
+                        <li><a href="/ru/lesson_3/reading.html" class="menu_sub_button">Чтение и словарный запас</a></li>
+                        <li><a href="/ru/lesson_3/exercises.html" class="menu_sub_button">Упражнения</a></li>
                     </ul>
                 </li>
                 <li style="position: relative;">

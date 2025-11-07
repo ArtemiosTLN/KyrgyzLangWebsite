@@ -12,6 +12,11 @@ header {
     background-size: auto;
     position: relative;
 }
+header .logo {
+    width: 75px;
+    height: auto;
+    vertical-align: middle;
+}
 header::before, footer::before {
     content: "";
     position: absolute;
@@ -52,7 +57,7 @@ header .site_name {
     font-size: 22px;
     text-align: left;
     position: absolute;
-    left: 20px;
+    left: 2px;
     font-size: 28px;
     font-weight: bold;
 }
@@ -142,8 +147,9 @@ main {
     position: absolute;
     left: 20px;
     padding-top: 20px;
+    width: auto;
     cursor: pointer;
-    overflow: scroll;
+    overflow: auto;
 }
 .side_menu ul {
     list-style: none;
@@ -336,4 +342,72 @@ button {
 .blank.incorrect {
     border: 2px solid #ff4136;
     background: #ffeaea;
+}
+.dialog-pair {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.dialog-original {
+    flex: 1;
+}
+.dialog-controls {
+    display: flex;
+    align-items: start;
+}
+.dialog-translation {
+    flex: 1;
+    display: none;
+}
+.dialog-translation.visible {
+    display: block;
+}
+@media (max-width: 800px) {
+    .dialog-pair {
+        flex-direction: column;
+    }
+    .dialog-controls { order: 2; }
+    .dialog-translation { order: 3; }
+}
+.exercise-gr {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.exercise-gr .categories-container {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.exercise-gr .category {
+    box-sizing: border-box;
+    flex: 1 1 220px;
+    max-width: 33%;
+    min-width: 180px;
+    padding: 8px;
+}
+
+.exercise-gr .words-container {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.exercise-gr .draggable-word {
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
+.exercise-gr,
+.exercise-gr * {
+    box-sizing: border-box;
 }

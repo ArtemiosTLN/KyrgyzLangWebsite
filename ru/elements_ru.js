@@ -24,30 +24,12 @@ class SiteHeader extends HTMLElement {
                     </ul>
                 </li>
                 <li style="position: relative;">
-                    <a href="#" class="menu_main_button">3</a>
+                    <a href="/ru/lesson_3/overview.html" class="menu_main_button">3</a>
                     <ul class="submenu">
                         <li><a href="/ru/lesson_3/overview.html" class="menu_sub_button">Обзор</a></li>
                         <li><a href="/ru/lesson_3/grammar.html" class="menu_sub_button">Грамматика</a></li>
                         <li><a href="/ru/lesson_3/reading.html" class="menu_sub_button">Чтение и словарный запас</a></li>
                         <li><a href="/ru/lesson_3/exercises.html" class="menu_sub_button">Упражнения</a></li>
-                    </ul>
-                </li>
-                <li style="position: relative;">
-                    <a href="#" class="menu_main_button">4</a>
-                    <ul class="submenu">
-                        <li><a href="#" class="menu_sub_button">Обзор</a></li>
-                        <li><a href="#" class="menu_sub_button">Грамматика</a></li>
-                        <li><a href="#" class="menu_sub_button">Чтение и словарный запас</a></li>
-                        <li><a href="#" class="menu_sub_button">Упражнения</a></li>
-                    </ul>
-                </li>
-                <li style="position: relative;">
-                    <a href="#" class="menu_main_button">5</a>
-                    <ul class="submenu">
-                        <li><a href="#" class="menu_sub_button">Обзор</a></li>
-                        <li><a href="#" class="menu_sub_button">Грамматика</a></li>
-                        <li><a href="#" class="menu_sub_button">Чтение и словарный запас</a></li>
-                        <li><a href="#" class="menu_sub_button">Упражнения</a></li>
                     </ul>
                 </li>
             </ul>
@@ -93,9 +75,8 @@ class FooterSection extends HTMLElement {
     <footer>
       <nav class="footer_menu">
           <ul>
-              <li><a href="/ru/about_us.html">Контакты</a></li>
+              <li><a href="/ru/contacts.html">Контакты</a></li>
               <li><a href="/ru/about_us.html">О нас</a></li>
-              <li><a href="/ru/about_us.html">Ваши предложения</a></li>
           </ul>
       </nav>
       <p>2025 KyrgyzEasy</p>

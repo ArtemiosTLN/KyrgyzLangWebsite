@@ -9,24 +9,7 @@
 <body>
     <site-header></site-header>
     <main>
-        <nav class="side_menu">
-            <ul>
-                <button onclick="window.history.back()">← Назад</button>
-                <li>
-                    <a href="/ru/lesson_2/overview.html">Обзор</a>
-                </li>
-                <li>
-                    <a href="/ru/lesson_2/grammar.html">Грамматика</a>
-                </li>
-                <li>
-                    <a href="/ru/lesson_2/reading.html">Чтение</a>
-                </li>
-                <li>
-                    <p style="background-color: #fdab13;">Упражнения</p>
-                </li>
-            </ul>
-            <script src="/side_menu.js"></script>
-        </nav>
+        <side-menu></side-menu>
         <div class="main-text">
             <h3>Упражнение 1</h3>
             <p>Запишите количественные числительные словами</p>
@@ -48,7 +31,7 @@
             <button id="check-blanks-btn">Проверить</button>
             <button id="reset-blanks-btn">Сбросить</button>
             <span id="blanks-score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/33</span>
-            <script src="/ru/exercise-blanks.js"></script>
+            <script src="/ru/scripts/exercise-blanks.js"></script>
 
             <h3>Упражнение 2</h3>
             <p>Посмотрите на картинки и составьте предложения. В отличии от прошлого урока, тут предлагаемых слов больше, чем нужно в предложении. Поэтому использовать все слова не нужно.</p>
@@ -97,10 +80,11 @@
                 <span class="score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/2</span>
             </div>
 
-            <script src="/ru/exercise-dnd.js"></script>
+            <script src="/ru/scripts/exercise-dnd.js"></script>
         </div>
     </main>
     <site-footer></site-footer>
-    <script src="/ru/elements_ru.js"></script>
+    <script src="/ru/scripts/elements_ru.js"></script>
+    <script src="/ru/scripts/side_menu.js"></script>
 </body>
 </html>

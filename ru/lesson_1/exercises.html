@@ -9,24 +9,7 @@
 <body>
     <site-header></site-header>
     <main>
-        <nav class="side_menu">
-            <ul>
-                <button onclick="window.history.back()">← Назад</button>
-                <li>
-                    <a href="/ru/lesson_1/overview.html">Обзор</a>
-                </li>
-                <li>
-                    <a href="/ru/lesson_1/grammar.html">Грамматика</a>
-                </li>
-                <li>
-                    <a href="/ru/lesson_1/reading.html">Чтение</a>
-                </li>
-                <li>
-                    <p style="background-color: #fdab13;">Упражнения</p>
-                </li>
-            </ul>
-            <script src="/side_menu.js"></script>
-        </nav>
+        <side-menu></side-menu>
         <div class="main-text">
             <h3>Упражнение 1</h3>
             <p>Расположите слова в правильном порядке:</p>
@@ -69,7 +52,7 @@
                 <button class="reset-btn">Сбросить</button>
                 <span class="score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/5</span>
             </div>
-            <script src="/ru/exercise-dnd.js"></script>
+            <script src="/ru/scripts/exercise-dnd.js"></script>
 
             <h3>Упражнение 2</h3>
             <p>Впишите подходящее личное местоимение в пропуски:</p>
@@ -88,10 +71,11 @@
             <button id="check-blanks-btn">Проверить</button>
             <button id="reset-blanks-btn">Сбросить</button>
             <span id="blanks-score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/10</span>
-            <script src="/ru/exercise-blanks.js"></script>
+            <script src="/ru/scripts/exercise-blanks.js"></script>
         </div>
     </main>
     <site-footer></site-footer>
-    <script src="/ru/elements_ru.js"></script>
+    <script src="/ru/scripts/elements_ru.js"></script>
+    <script src="/ru/scripts/side_menu.js"></script>
 </body>
 </html>

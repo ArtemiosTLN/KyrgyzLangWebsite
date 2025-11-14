@@ -6,7 +6,7 @@ class SiteHeader extends HTMLElement {
             <h1 class="site_name"><a href="/"><img src="/logo.png" class="logo"></img>KyrgyzEasy</a></h1>
             <ul class="header_menu">
                 <li style="position: relative;">
-                    <a href="/ru/lesson_1/overview.html" class="menu_main_button">1</a>
+                    <a href="/ru/lesson_1/overview.html" class="menu_main_button" id="lesson1">1</a>
                     <ul class="submenu">
                         <li><a href="/ru/lesson_1/overview.html" class="menu_sub_button">Обзор</a></li>
                         <li><a href="/ru/lesson_1/grammar.html" class="menu_sub_button">Грамматика</a></li>
@@ -15,7 +15,7 @@ class SiteHeader extends HTMLElement {
                     </ul>
                 </li>
                 <li style="position: relative;">
-                    <a href="/ru/lesson_2/overview.html" class="menu_main_button">2</a>
+                    <a href="/ru/lesson_2/overview.html" class="menu_main_button" id="lesson2">2</a>
                     <ul class="submenu">
                         <li><a href="/ru/lesson_2/overview.html" class="menu_sub_button">Обзор</a></li>
                         <li><a href="/ru/lesson_2/grammar.html" class="menu_sub_button">Грамматика</a></li>
@@ -24,7 +24,7 @@ class SiteHeader extends HTMLElement {
                     </ul>
                 </li>
                 <li style="position: relative;">
-                    <a href="/ru/lesson_3/overview.html" class="menu_main_button">3</a>
+                    <a href="/ru/lesson_3/overview.html" class="menu_main_button" id="lesson3">3</a>
                     <ul class="submenu">
                         <li><a href="/ru/lesson_3/overview.html" class="menu_sub_button">Обзор</a></li>
                         <li><a href="/ru/lesson_3/grammar.html" class="menu_sub_button">Грамматика</a></li>

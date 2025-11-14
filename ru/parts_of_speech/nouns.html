@@ -9,54 +9,9 @@
 <body>
     <site-header></site-header>
     <main>
-        <nav class="side_menu">
-            <ul>
-                <button onclick="window.history.back()">← Назад</button>
-                <li>
-                    <p class="side_menu_button">Письменность</p>
-                    <ul class="side_submenu">
-                        <li><a href="/ru/alphabet.html">Алфавит</a></li>
-                        <li><a href="/ru/vowels.html">Гласные</a></li>
-                        <li><a href="/ru/consonants.html">Согласные</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <p class="side_menu_button" style="background-color: #fdab13; padding: 8px 12px;">Части речи</p>
-                    <ul class="side_submenu">
-                        <li style="background-color: #fdab13; padding: 8px 12px;">Существительные</li>
-                        <li><a href="#">Глаголы (WIP)</a></li>
-                        <li><a href="#">Прилагательные (WIP)</a></li>
-                        <li><a href="/ru/numerals.html">Числительные</a></li>
-                        <li><a href="/ru/personal_pronouns.html">Личные местоимения</a></li>
-                        <li><a href="#">Указательные местоимения (WIP)</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <p class="side_menu_button">Грамматика (WIP)</p>
-                    <ul class="side_submenu">
-                        <li><a href="#">Подраздел 3.1 (WIP)</a></li>
-                        <li><a href="#">Подраздел 3.2 (WIP)</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <p class="side_menu_button">Песни (WIP)</p>
-                    <ul class="side_submenu">
-                        <li><a href="#">Подраздел (WIP)</a></li>
-                        <li><a href="#">Подраздел (WIP)</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <p class="side_menu_button">Слушание (WIP)</p>
-                    <ul class="side_submenu">
-                        <li><a href="#">Подраздел (WIP)</a></li>
-                        <li><a href="#">Подраздел (WIP)</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <script src="/side_menu.js"></script>
-        </nav>
+        <side-menu></side-menu>
         <div class="main-text">
-            <h2>Имена существительные (Зат атооч) в кыргызском языке</h2>
+            <h2>Имя существительное (Зат атооч)</h2>
             <p>
                 В кыргызском языке имена существительные изменяются по падежам и числам, как в русском языке, а также они имеют категории 
                 принадлежности и сказуемости. Далее будут объяснены способы образования этих категорий и из значения.
@@ -269,6 +224,7 @@
         </div>
     </main>
     <site-footer></site-footer>
-    <script src="/ru/elements_ru.js"></script>
+    <script src="/ru/scripts/elements_ru.js"></script>
+    <script src="/ru/scripts/side_menu.js"></script>
 </body>
 </html>

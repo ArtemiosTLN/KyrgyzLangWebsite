@@ -9,24 +9,7 @@
 <body>
     <site-header></site-header>
     <main>
-        <nav class="side_menu">
-            <ul>
-                <button onclick="window.history.back()">← Назад</button>
-                <li>
-                    <p style="background-color: #fdab13;">Обзор</p>
-                </li>
-                <li>
-                    <a href="/ru/lesson_1/grammar.html">Грамматика</a>
-                </li>
-                <li>
-                    <a href="/ru/lesson_1/reading.html">Чтение</a>
-                </li>
-                <li>
-                    <a href="/ru/lesson_1/exercises.html">Упражнения</a>
-                </li>
-            </ul>
-            <script src="/side_menu.js"></script>
-        </nav>
+        <side-menu></side-menu>
         <div class="main-text">
             <h3>Обзор первого урока</h3>
             <p>
@@ -39,13 +22,14 @@
                 особенностях их употребления. В завершение вы найдете несколько базовых выражений, необходимых для знакомства и повседневного общения, 
                 а также два коротких диалога, позволяющих закрепить лексику в контексте. Урок завершается практическими заданиями, 
                 где вам предлагается расставить слова в правильном порядке и вписать подходящее личное местоимение в пропуски, чтобы потренироваться в построении простых предложений.
-                <br>Перед началом изучения кыргызского языка важно ознакомиться с <a href="/ru/alphabet.html" style="text-decoration: none; color: #1384fd;">алфавитом</a>, 
+                <br>Перед началом изучения кыргызского языка важно ознакомиться с <a href="/ru/writing/alphabet.html" style="text-decoration: none; color: #1384fd;">алфавитом</a>, 
                 поскольку далее будут представлены первые слова и целые тексты, 
                 которые уже необходимо уметь читать (но понимать ещё не требуется).
             </p>
         </div>
     </main>
     <site-footer></site-footer>
-    <script src="/ru/elements_ru.js"></script>
+    <script src="/ru/scripts/elements_ru.js"></script>
+    <script src="/ru/scripts/side_menu.js"></script>
 </body>
 </html>

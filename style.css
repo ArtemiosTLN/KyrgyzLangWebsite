@@ -201,6 +201,7 @@ main {
     display: block;
     color: #ffffff;
     text-decoration: none;
+    border: none;
     border-bottom: #fdab13 2px solid;
 }
 .side_submenu a:hover {

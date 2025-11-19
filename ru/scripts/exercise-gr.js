@@ -1,6 +1,4 @@
 document.querySelectorAll('.exercise-gr').forEach((exercise) => {
-    // data-categories: "Категория 1,Категория 2"
-    // data-words: "Мен:Категория 1,студентмин:Категория 2,прочее:Категория 1"
     const categories = (exercise.dataset.categories || '').split(',').map(s => s.trim()).filter(Boolean);
     const wordsRaw = (exercise.dataset.words || '').split(',').map(s => s.trim()).filter(Boolean);
 

@@ -370,13 +370,15 @@ button {
     .dialog-controls { order: 2; }
     .dialog-translation { order: 3; }
 }
-.exercise-gr {
+.exercise-gr, .exercise-dnd {
     width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
 }
 
-.exercise-gr .categories-container {
+
+
+.exercise-gr .categories-container, .exercise-dnd .slots-container {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
@@ -392,7 +394,7 @@ button {
     padding: 8px;
 }
 
-.exercise-gr .words-container {
+.exercise-gr .words-container, .exercise-dnd .words-container {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;

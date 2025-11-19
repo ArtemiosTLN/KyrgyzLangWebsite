@@ -104,6 +104,23 @@ const lesson3SideMenuHTML = `
         </li>
     </ul>
 `;
+const lesson4SideMenuHTML = `
+    <ul>
+        <button onclick="window.history.back()">← Назад</button>
+        <li>
+            <a href="/ru/lesson_4/overview.html" id="overview">Обзор</a>
+        </li>
+        <li>
+            <a href="/ru/lesson_4/grammar.html" id="grammar">Грамматика</a>
+        </li>
+        <li>
+            <a href="/ru/lesson_4/reading.html" id="reading">Чтение</a>
+        </li>
+        <li>
+            <a href="/ru/lesson_4/exercises.html" id="exercises">Упражнения</a>
+        </li>
+    </ul>
+`;
 
 switch (group) {
     case "ru":
@@ -134,6 +151,10 @@ switch (group) {
     case "lesson_3":
         document.querySelector('.side_menu').innerHTML = lesson3SideMenuHTML;
         document.querySelector('#lesson3').style = "background-color: #fdab13;";
+        break;
+    case "lesson_4":
+        document.querySelector('.side_menu').innerHTML = lesson4SideMenuHTML;
+        document.querySelector('#lesson4').style = "background-color: #fdab13;";
         break;
 }
 switch (pageName) {

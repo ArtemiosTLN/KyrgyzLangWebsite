@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>KyrgyzEasy - Урок 4 - Упражнения</title>
+    <link rel="icon" type="image/x-icon" href="/logo.ico">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <site-header></site-header>
+    <main>
+        <side-menu></side-menu>
+        <div class="main-text">
+            <h3>Упражнение 1</h3>
+            <p>Напишите аффиксы в соответствии с правилами гармонии гласных и ассимиляции согласных.</p>
+            <div class="exercise-blanks">
+                <p class="word_list">
+                    <h4>Образуйте множественное число, с помощью аффикса "-лар":</h4>
+                    1. Кабат<input type="text" class="blank" data-answer="тар">.<br>
+                    2. Сумка<input type="text" class="blank" data-answer="лар">.<br>
+                    3. Эже<input type="text" class="blank" data-answer="лер">.<br>
+                    4. Аял<input type="text" class="blank" data-answer="дар">.<br>
+                    <h4>Образуйте местный падеж, с помощью аффикса "-да":</h4>
+                    1. Айыл<input type="text" class="blank" data-answer="да">.<br>
+                    2. Үй-бүлө<input type="text" class="blank" data-answer="дө">.<br>
+                    3. Тамак<input type="text" class="blank" data-answer="та">.<br>
+                    4. Короо<input type="text" class="blank" data-answer="до"> (двор - во дворе).<br>
+                    <h4>Образуйте общий вопрос, с помощью аффикса "-бы":</h4>
+                    1. Бөлмө<input type="text" class="blank" data-answer="бү">?<br>
+                    2. Ак<input type="text" class="blank" data-answer="пы">?<br>
+                    3. Тоңдургуч<input type="text" class="blank" data-answer="пу">?<br>
+                    4. Текче<input type="text" class="blank" data-answer="би">?<br>
+                </p>
+                <button id="check-blanks-btn">Проверить</button>
+                <button id="reset-blanks-btn">Сбросить</button>
+                <span id="blanks-score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/12</span>
+            </div>
+
+            <h3>Упражнение 2</h3>
+            <p>Напишите подходящее вопросительное слово в диалогах.</p>
+            <div class="exercise-blanks">
+                <p class="word-list">
+                    1. - Тоңдургучта <input type="text" class="blank" data-answer="эмне"> бар?<br>
+                    - Жемиштер (ягоды).<br>
+                    2. - Бул <input type="text" class="blank" data-answer="кандай"> алма?.<br>
+                    - Бул кызыл (красное) алма.<br>
+                    3. - Сен <input type="text" class="blank" data-answer="кайда"> турасың?.<br>
+                    - Мен Бишкекте турам.<br>
+                    4. - Сенин үйүңдө азыр <input type="text" class="blank" data-answer="ким"> турат?.<br>
+                    - Менин карындашым турат.<br>
+                    5. - Сенин бөлмөң <input type="text" class="blank" data-answer="кайсы"> бөлмө?.<br>
+                    - Бул менин бөлмөм.<br>
+                    6. - Силердин бөлмөңөрдө <input type="text" class="blank" data-answer="/^канча$|^нече$"> лампа бар?.<br>
+                    - Биздин бөлмөбүздө төрт лампа бар.<br>
+                </p>
+                <button id="check-blanks-btn">Проверить</button>
+                <button id="reset-blanks-btn">Сбросить</button>
+                <span id="blanks-score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/12</span>
+            </div>
+
+            <h3>Упражнение 3</h3>
+            <p>Переведите предложения на кыргызский язык, следуя порядку частей предложения из первого урока: Подлежащее - дополнение - сказуемое.</p>
+            <br>
+            <p>Их комнаты чистые и красивые.</p>
+            <div class="exercise-dnd" data-words="Алардын,Анын,бөлмөлөрү,бөлмөсү,таза,жайлуу,жана,кооз" data-order="Алардын,бөлмөлөрү,таза,жана,кооз">
+                <div class="slots-container"></div>
+                <div class="words-container"></div>
+                <button class="check-btn">Проверить</button>
+                <button class="reset-btn">Сбросить</button>
+                <span class="score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/2</span>
+            </div>
+            <br>
+            <p>Её родители живут в деревне.</p>
+            <div class="exercise-dnd" data-words="Анын,Сиздин,ата-энеси,үй-бүлөсү,айылда,шаарда,турашат,иштешет" data-order="Анын,ата-энеси,айылда,турашат">
+                <div class="slots-container"></div>
+                <div class="words-container"></div>
+                <button class="check-btn">Проверить</button>
+                <button class="reset-btn">Сбросить</button>
+                <span class="score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/2</span>
+            </div>
+            <br>
+            <p>Вы (ед.ч) работаете в городе, не так ли?</p>
+            <div class="exercise-dnd" data-words="Сиз,Силер,шаарда,үйдө,шаарыңызда,иштейсиз,иштейсизби?,ушундайбы" data-order="Сиз,шаарда,иштейсиз,ушундайбы">
+                <div class="slots-container"></div>
+                <div class="words-container"></div>
+                <button class="check-btn">Проверить</button>
+                <button class="reset-btn">Сбросить</button>
+                <span class="score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/2</span>
+            </div>
+            <br>
+            <p>Эта ведь твоя светлая и белая комната?</p>
+            <div class="exercise-dnd" data-words="Бул,Тиги,сенин,силердин,ачык,жарык,жана,ак,бөлмөңбү,бөлмөң" data-order="Бул,сенин,ачык,жана,ак,бөлмөңбү">
+                <div class="slots-container"></div>
+                <div class="words-container"></div>
+                <button class="check-btn">Проверить</button>
+                <button class="reset-btn">Сбросить</button>
+                <span class="score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/2</span>
+            </div>
+            <br>
+            <p>Тот человек Ваш (ед.ч) муж?</p>
+            <div class="exercise-dnd" data-words="Тиги,киши,апа,аялысызбы,сиздин,силердин,күйөөсүзбү,жездесизби" data-order="Тиги,киши,сиздин,күйөөсүзбү">
+                <div class="slots-container"></div>
+                <div class="words-container"></div>
+                <button class="check-btn">Проверить</button>
+                <button class="reset-btn">Сбросить</button>
+                <span class="score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/2</span>
+            </div>
+        </div>
+    </main>
+    <site-footer></site-footer>
+    <script src="/ru/scripts/exercise-dnd.js"></script>
+    <script src="/ru/scripts/exercise-blanks.js"></script>
+    <script src="/ru/scripts/elements_ru.js"></script>
+    <script src="/ru/scripts/side_menu.js"></script>
+</body>
+</html>

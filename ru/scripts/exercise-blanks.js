@@ -1,29 +1,43 @@
-document.getElementById('check-blanks-btn').addEventListener('click', () => {
-    let score = 0;
-    const blanks = document.querySelectorAll('.blank');
-    blanks.forEach(blank => {
-        const userAnswer = blank.value.trim().toLowerCase();
-        const correctAnswer = blank.dataset.answer.trim().toLowerCase();
-        blank.classList.remove('correct', 'incorrect');
-        if (userAnswer === correctAnswer) {
-            blank.classList.add('correct');
-            score++;
-        } else {
-            blank.classList.add('incorrect');
-        }
+document.querySelectorAll('.exercise-blanks').forEach((exercise) => {
+    exercise.querySelector('#check-blanks-btn').addEventListener('click', () => {
+        let score = 0;
+        const blanks = exercise.querySelectorAll('.blank');
+        blanks.forEach(blank => {
+            const userAnswer = blank.value.trim().toLowerCase();
+            let correctAnswer = blank.dataset.answer.trim();
+            blank.classList.remove('correct', 'incorrect');
+            if (correctAnswer[0] === '/') {
+                correctAnswer = correctAnswer.substring(1, correctAnswer.length);
+                correctAnswer = new RegExp(correctAnswer);
+                console.log(correctAnswer);
+                if (correctAnswer.test(userAnswer)) {
+                    blank.classList.add('correct');
+                    score++;
+                } else {
+                    blank.classList.add('incorrect');
+                }
+            } else {
+                if (userAnswer === correctAnswer) {
+                    blank.classList.add('correct');
+                    score++;
+                } else {
+                    blank.classList.add('incorrect');
+                }
+            }
+        });
+        exercise.querySelector('#blanks-score-text').textContent = `Баллы: ${score}/${blanks.length}`;
     });
-    document.getElementById('blanks-score-text').textContent = `Баллы: ${score}/${blanks.length}`;
-});
 
-document.getElementById('reset-blanks-btn').addEventListener('click', () => {
-    document.querySelectorAll('.blank').forEach(blank => {
-        blank.value = '';
-        blank.classList.remove('correct', 'incorrect');
+    exercise.querySelector('#reset-blanks-btn').addEventListener('click', () => {
+        exercise.querySelectorAll('.blank').forEach(blank => {
+            blank.value = '';
+            blank.classList.remove('correct', 'incorrect');
+        });
     });
-});
 
-document.querySelectorAll('.blank').forEach(blank => {
-    blank.addEventListener('input', () => {
-        blank.classList.remove('correct', 'incorrect');
+    exercise.querySelectorAll('.blank').forEach(blank => {
+        blank.addEventListener('input', () => {
+            blank.classList.remove('correct', 'incorrect');
+        });
     });
 });

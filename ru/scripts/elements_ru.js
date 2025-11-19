@@ -32,12 +32,21 @@ class SiteHeader extends HTMLElement {
                         <li><a href="/ru/lesson_3/exercises.html" class="menu_sub_button">Упражнения</a></li>
                     </ul>
                 </li>
+                <li style="position: relative;">
+                    <a href="/ru/lesson_4/overview.html" class="menu_main_button" id="lesson4">4</a>
+                    <ul class="submenu">
+                        <li><a href="/ru/lesson_4/overview.html" class="menu_sub_button">Обзор</a></li>
+                        <li><a href="/ru/lesson_4/grammar.html" class="menu_sub_button">Грамматика</a></li>
+                        <li><a href="/ru/lesson_4/reading.html" class="menu_sub_button">Чтение и словарный запас</a></li>
+                        <li><a href="/ru/lesson_4/exercises.html" class="menu_sub_button">Упражнения</a></li>
+                    </ul>
+                </li>
             </ul>
             <ul class="language_menu">
                 <p>Русский ▼</p>
                 <ul class="language_submenu">
-                    <li><a href="/kg/main.html">Кыргызча (WIP)</a></li>
-                    <li><a href="/en/main.html">English (WIP)</a></li>
+                    <li><a href="#">Кыргызча (WIP)</a></li>
+                    <li><a href="#">English (WIP)</a></li>
                 </ul>
             </ul>
         </nav>

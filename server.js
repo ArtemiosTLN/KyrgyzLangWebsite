@@ -12,5 +12,5 @@ app.get("/", (req, res) => {
 
 app.use(express.static(__dirname));
 
-const PORT = 3000;
-app.listen(PORT, () => console.log(`🚀 Сервер запущен: http://localhost:${PORT}`));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Сервер запущен на порте: ${PORT}`));

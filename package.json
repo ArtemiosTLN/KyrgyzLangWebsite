@@ -1,4 +1,15 @@
 {
+  "name": "kyrgyzeasy",
+  "version": "1.0.0",
+  "description": "KyrgyzEasy - A website to learn Kyrgyz language",
+  "main": "server.js",
+  "repository": "https://github.com/ArtemiosTLN/KyrgyzLangWebsite",
+  "author": "Artjom Šiškov and Nazifa Abdullayeva",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "express": "^5.1.0"
   }

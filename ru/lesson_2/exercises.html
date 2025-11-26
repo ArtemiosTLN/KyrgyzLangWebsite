@@ -13,29 +13,31 @@
         <div class="main-text">
             <h3>Упражнение 1</h3>
             <p>Запишите количественные числительные словами</p>
-            <p>Помните, что вы всегда можете обратиться к странице <a href="/ru/lesson_2/grammar.html">"грамматика"</a> за помощью.
+            <p>Помните, что вы всегда можете обратиться к странице <a href="/ru/lesson_2/grammar">"грамматика"</a> за помощью.
                 Но лучше попытаться без подсказок самому решить данное упражнение. Как показывает практика, это лучший способ запомнить новые слова.
             </p>
-            <p class="word_list">
-                1. <input type="text" class="blank" data-answer="сегиз"/> - 8<br>
-                2. <input type="text" class="blank" data-answer="кырк"/> - 40<br>
-                3. <input type="text" class="blank" data-answer="алтымыш"/> <input type="text" class="blank" data-answer="жети" /> - 67<br>
-                4. <input type="text" class="blank" data-answer="жүз"/> <input type="text" class="blank" data-answer="тогуз"/> - 109<br>
-                5. <input type="text" class="blank" data-answer="үч"/> <input type="text" class="blank" data-answer="жүз"/> <input type="text" class="blank" data-answer="токсон"/> <input type="text" class="blank" data-answer="эки"/> - 392<br>
-                6. <input type="text" class="blank" data-answer="жети"/> <input type="text" class="blank" data-answer="жүз"/> <input type="text" class="blank" data-answer="жыйырма"/> <input type="text" class="blank" data-answer="төрт"/> - 724<br>
-                7. <input type="text" class="blank" data-answer="беш"/> <input type="text" class="blank" data-answer="жүз"/> <input type="text" class="blank" data-answer="он"/> <input type="text" class="blank" data-answer="беш"/> - 515<br>
-                8. <input type="text" class="blank" data-answer="миң"/> <input type="text" class="blank" data-answer="эки"/> <input type="text" class="blank" data-answer="жүз"/> <input type="text" class="blank" data-answer="элүү"/> <input type="text" class="blank" data-answer="бир"/> - 1251<br>
-                9. <input type="text" class="blank" data-answer="үч"/> <input type="text" class="blank" data-answer="миң"/> <input type="text" class="blank" data-answer="жүз"/> <input type="text" class="blank" data-answer="отуз"/> <input type="text" class="blank" data-answer="тогуз"/> - 3139<br>
-                10. <input type="text" class="blank" data-answer="алты"/> <input type="text" class="blank" data-answer="миң"/> <input type="text" class="blank" data-answer="тогуз"/> <input type="text" class="blank" data-answer="жүз"/> <input type="text" class="blank" data-answer="жетимыш"/> - 6970<br>
-            </p>
-            <button id="check-blanks-btn">Проверить</button>
-            <button id="reset-blanks-btn">Сбросить</button>
-            <span id="blanks-score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/33</span>
-            <script src="/ru/scripts/exercise-blanks.js"></script>
+            <div class="exercise-blanks">
+                <p class="word_list">
+                    1. <input type="text" class="blank" data-answer="сегиз"/> - 8<br>
+                    2. <input type="text" class="blank" data-answer="кырк"/> - 40<br>
+                    3. <input type="text" class="blank" data-answer="алтымыш"/> <input type="text" class="blank" data-answer="жети" /> - 67<br>
+                    4. <input type="text" class="blank" data-answer="жүз"/> <input type="text" class="blank" data-answer="тогуз"/> - 109<br>
+                    5. <input type="text" class="blank" data-answer="үч"/> <input type="text" class="blank" data-answer="жүз"/> <input type="text" class="blank" data-answer="токсон"/> <input type="text" class="blank" data-answer="эки"/> - 392<br>
+                    6. <input type="text" class="blank" data-answer="жети"/> <input type="text" class="blank" data-answer="жүз"/> <input type="text" class="blank" data-answer="жыйырма"/> <input type="text" class="blank" data-answer="төрт"/> - 724<br>
+                    7. <input type="text" class="blank" data-answer="беш"/> <input type="text" class="blank" data-answer="жүз"/> <input type="text" class="blank" data-answer="он"/> <input type="text" class="blank" data-answer="беш"/> - 515<br>
+                    8. <input type="text" class="blank" data-answer="миң"/> <input type="text" class="blank" data-answer="эки"/> <input type="text" class="blank" data-answer="жүз"/> <input type="text" class="blank" data-answer="элүү"/> <input type="text" class="blank" data-answer="бир"/> - 1251<br>
+                    9. <input type="text" class="blank" data-answer="үч"/> <input type="text" class="blank" data-answer="миң"/> <input type="text" class="blank" data-answer="жүз"/> <input type="text" class="blank" data-answer="отуз"/> <input type="text" class="blank" data-answer="тогуз"/> - 3139<br>
+                    10. <input type="text" class="blank" data-answer="алты"/> <input type="text" class="blank" data-answer="миң"/> <input type="text" class="blank" data-answer="тогуз"/> <input type="text" class="blank" data-answer="жүз"/> <input type="text" class="blank" data-answer="жетимыш"/> - 6970<br>
+                </p>
+                <button id="check-blanks-btn">Проверить</button>
+                <button id="reset-blanks-btn">Сбросить</button>
+                <span id="blanks-score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/33</span>
+            </div>
+            
 
             <h3>Упражнение 2</h3>
             <p>Посмотрите на картинки и составьте предложения. В отличии от прошлого урока, тут предлагаемых слов больше, чем нужно в предложении. Поэтому использовать все слова не нужно.</p>
-            <img src="/Яблоки в сумке.png" alt="Яблоки в сумке" style="width: 400px; height: auto; display: block; margin: 20px auto; max-width: 100%;">
+            <img src="/media/Яблоки в сумке.png" alt="Яблоки в сумке" style="width: 400px; height: auto; display: block; margin: 20px auto; max-width: 100%;">
             <div class="exercise-dnd" data-words="Бул,сумкада,жүз,отуз,элүү,жети,эки,алма,бар" data-order="Бул,сумкада,отуз,жети,алма,бар">
                 <div class="slots-container"></div>
                 <div class="words-container"></div>
@@ -44,7 +46,7 @@
                 <span class="score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/2</span>
             </div>
 
-            <img src="/Книги на столе.png" alt="Книги на столе" style="width: 400px; height: auto; display: block; margin: 20px auto; max-width: 100%;">
+            <img src="/media/Книги на столе.png" alt="Книги на столе" style="width: 400px; height: auto; display: block; margin: 20px auto; max-width: 100%;">
             <div class="exercise-dnd" data-words="Бул,столдо,миң,алтымыш,кырк,тогуз,сегиз,китеп,бар" data-order="Бул,столдо,кырк,тогуз,китеп,бар">
                 <div class="slots-container"></div>
                 <div class="words-container"></div>
@@ -53,7 +55,7 @@
                 <span class="score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/2</span>
             </div>
 
-            <img src="/Сумки на столе.png" alt="Сумки на столе" style="width: 400px; height: auto; display: block; margin: 20px auto; max-width: 100%;">
+            <img src="/media/Сумки на столе.png" alt="Сумки на столе" style="width: 400px; height: auto; display: block; margin: 20px auto; max-width: 100%;">
             <div class="exercise-dnd" data-words="Бул,столдо,жыйырма,эки,он,отуз,жетимыш,сумка,бар" data-order="Бул,столдо,жыйырма,сумка,бар">
                 <div class="slots-container"></div>
                 <div class="words-container"></div>
@@ -62,7 +64,7 @@
                 <span class="score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/2</span>
             </div>
 
-            <img src="/33 сома на столе.png" alt="33 сома на столе" style="width: 400px; height: auto; display: block; margin: 20px auto; max-width: 100%;">
+            <img src="/media/33 сома на столе.png" alt="33 сома на столе" style="width: 400px; height: auto; display: block; margin: 20px auto; max-width: 100%;">
             <div class="exercise-dnd" data-words="Бул,столдо,он,отуз,элүү,бир,үч,сом,бар" data-order="Бул,столдо,отуз,үч,сом,бар">
                 <div class="slots-container"></div>
                 <div class="words-container"></div>
@@ -71,7 +73,7 @@
                 <span class="score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/2</span>
             </div>
 
-            <img src="/26 сомов в сумке.png" alt="26 сомов в сумке" style="width: 400px; height: auto; display: block; margin: 20px auto; max-width: 100%;">
+            <img src="/media/26 сомов в сумке.png" alt="26 сомов в сумке" style="width: 400px; height: auto; display: block; margin: 20px auto; max-width: 100%;">
             <div class="exercise-dnd" data-words="Бул,сумкада,жыйырма,алты,токсон,сегиз,он,сом,бар" data-order="Бул,сумкада,жыйырма,алты,сом,бар">
                 <div class="slots-container"></div>
                 <div class="words-container"></div>
@@ -84,6 +86,7 @@
         </div>
     </main>
     <site-footer></site-footer>
+    <script src="/ru/scripts/exercise-blanks.js"></script>
     <script src="/ru/scripts/elements_ru.js"></script>
     <script src="/ru/scripts/side_menu.js"></script>
 </body>

@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
 }
 header {
-    background-image: url('ornament.png');
+    background-image: url('media/ornament.png');
     background-repeat: repeat-x;
     background-position: top;
     background-size: auto;
@@ -32,7 +32,7 @@ header, footer {
 footer {
     margin-top: auto;
     bottom: auto;
-    background-image: url('ornament2.png');
+    background-image: url('media/ornament2.png');
     background-repeat: repeat-x;
     background-position: bottom;
     background-size: 14%, 14%, auto;

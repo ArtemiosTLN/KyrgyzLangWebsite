@@ -29,47 +29,49 @@
 
             <h3>Упражнение 3</h3>
             <p>Заполните таблицу, вписав слова в нужной форме.</p>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Местоимение (чей?)</td>
-                        <td>Член семьи</td>
-                        <td>Правильная форма</td>
-                    </tr>
-                    <tr>
-                        <td>Менин</td>
-                        <td>Ата</td>
-                        <td><input type="text" class="blank" data-answer="атам"/></td>
-                    </tr>
-                    <tr>
-                        <td>Сенин</td>
-                        <td>Эже</td>
-                        <td><input type="text" class="blank" data-answer="эжең"/></td>
-                    </tr>
-                    <tr>
-                        <td>Анын</td>
-                        <td>Бала</td>
-                        <td><input type="text" class="blank" data-answer="баласы"/></td>
-                    </tr>
-                    <tr>
-                        <td>Менин</td>
-                        <td>Кыз</td>
-                        <td><input type="text" class="blank" data-answer="кызым"/></td>
-                    </tr>
-                    <tr>
-                        <td>Сенин</td>
-                        <td>Үй-бүлө</td>
-                        <td><input type="text" class="blank" data-answer="үй-бүлөң"/></td>
-                    </tr>
-                </tbody>
-            </table>
-            <button id="check-blanks-btn">Проверить</button>
-            <button id="reset-blanks-btn">Сбросить</button>
-            <span id="blanks-score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/5</span>
-            <script src="/ru/scripts/exercise-blanks.js"></script>
+            <div class="exercise-blanks">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Местоимение (чей?)</td>
+                            <td>Член семьи</td>
+                            <td>Правильная форма</td>
+                        </tr>
+                        <tr>
+                            <td>Менин</td>
+                            <td>Ата</td>
+                            <td><input type="text" class="blank" data-answer="атам"/></td>
+                        </tr>
+                        <tr>
+                            <td>Сенин</td>
+                            <td>Эже</td>
+                            <td><input type="text" class="blank" data-answer="эжең"/></td>
+                        </tr>
+                        <tr>
+                            <td>Анын</td>
+                            <td>Бала</td>
+                            <td><input type="text" class="blank" data-answer="баласы"/></td>
+                        </tr>
+                        <tr>
+                            <td>Менин</td>
+                            <td>Кыз</td>
+                            <td><input type="text" class="blank" data-answer="кызым"/></td>
+                        </tr>
+                        <tr>
+                            <td>Сенин</td>
+                            <td>Үй-бүлө</td>
+                            <td><input type="text" class="blank" data-answer="үй-бүлөң"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="check-blanks-btn">Проверить</button>
+                <button id="reset-blanks-btn">Сбросить</button>
+                <span id="blanks-score-text" style="margin-left:16px; font-size:0.95em; color:#333;">Баллы: 0/5</span>
+            </div>
         </div>
     </main>
     <site-footer></site-footer>
+    <script src="/ru/scripts/exercise-blanks.js"></script>
     <script src="/ru/scripts/elements_ru.js"></script>
     <script src="/ru/scripts/side_menu.js"></script>
 </body>

@@ -7,19 +7,19 @@ class SideMenu extends HTMLElement {
                 <li>
                     <p class="side_menu_button" id="writing">Письменность</p>
                     <ul class="side_submenu">
-                        <li id="alphabet"><a href="/ru/writing/alphabet.html">Алфавит</a></li>
-                        <li id="vowels"><a href="/ru/writing/vowels.html">Гласные</a></li>
-                        <li id="consonants"><a href="/ru/writing/consonants.html">Согласные</a></li>
+                        <li id="alphabet"><a href="/ru/writing/alphabet">Алфавит</a></li>
+                        <li id="vowels"><a href="/ru/writing/vowels">Гласные</a></li>
+                        <li id="consonants"><a href="/ru/writing/consonants">Согласные</a></li>
                     </ul>
                 </li>
                 <li>
                     <p class="side_menu_button" id="parts_of_speech">Части речи</p>
                     <ul class="side_submenu">
-                        <li id="nouns"><a href="/ru/parts_of_speech/nouns.html">Существительные</a></li>
+                        <li id="nouns"><a href="/ru/parts_of_speech/nouns">Существительные</a></li>
                         <li id="verbs"><a href="#">Глаголы (WIP)</a></li>
                         <li id="adjectives"><a href="#">Прилагательные (WIP)</a></li>
-                        <li id="numerals"><a href="/ru/parts_of_speech/numerals.html">Числительные</a></li>
-                        <li id="personal_pronouns"><a href="/ru/parts_of_speech/personal_pronouns.html">Личные местоимения</a></li>
+                        <li id="numerals"><a href="/ru/parts_of_speech/numerals">Числительные</a></li>
+                        <li id="personal_pronouns"><a href="/ru/parts_of_speech/personal_pronouns">Личные местоимения</a></li>
                         <li id="demontratives"><a href="#">Указательные местоимения (WIP)</a></li>
                     </ul>
                 </li>
@@ -57,16 +57,16 @@ const lesson1SideMenuHTML = `
     <ul>
         <button onclick="window.history.back()">← Назад</button>
         <li>
-            <a href="/ru/lesson_1/overview.html" id="overview">Обзор</a>
+            <a href="/ru/lesson_1/overview" id="overview">Обзор</a>
         </li>
         <li>
-            <a href="/ru/lesson_1/grammar.html" id="grammar">Грамматика</a>
+            <a href="/ru/lesson_1/grammar" id="grammar">Грамматика</a>
         </li>
         <li>
-            <a href="/ru/lesson_1/reading.html" id="reading">Чтение</a>
+            <a href="/ru/lesson_1/reading" id="reading">Чтение</a>
         </li>
         <li>
-            <a href="/ru/lesson_1/exercises.html" id="exercises">Упражнения</a>
+            <a href="/ru/lesson_1/exercises" id="exercises">Упражнения</a>
         </li>
     </ul>
 `;
@@ -74,16 +74,16 @@ const lesson2SideMenuHTML = `
     <ul>
         <button onclick="window.history.back()">← Назад</button>
         <li>
-            <a href="/ru/lesson_2/overview.html" id="overview">Обзор</a>
+            <a href="/ru/lesson_2/overview" id="overview">Обзор</a>
         </li>
         <li>
-            <a href="/ru/lesson_2/grammar.html" id="grammar">Грамматика</a>
+            <a href="/ru/lesson_2/grammar" id="grammar">Грамматика</a>
         </li>
         <li>
-            <a href="/ru/lesson_2/reading.html" id="reading">Чтение</a>
+            <a href="/ru/lesson_2/reading" id="reading">Чтение</a>
         </li>
         <li>
-            <a href="/ru/lesson_2/exercises.html" id="exercises">Упражнения</a>
+            <a href="/ru/lesson_2/exercises" id="exercises">Упражнения</a>
         </li>
     </ul>
 `;
@@ -91,16 +91,16 @@ const lesson3SideMenuHTML = `
     <ul>
         <button onclick="window.history.back()">← Назад</button>
         <li>
-            <a href="/ru/lesson_3/overview.html" id="overview">Обзор</a>
+            <a href="/ru/lesson_3/overview" id="overview">Обзор</a>
         </li>
         <li>
-            <a href="/ru/lesson_3/grammar.html" id="grammar">Грамматика</a>
+            <a href="/ru/lesson_3/grammar" id="grammar">Грамматика</a>
         </li>
         <li>
-            <a href="/ru/lesson_3/reading.html" id="reading">Чтение</a>
+            <a href="/ru/lesson_3/reading" id="reading">Чтение</a>
         </li>
         <li>
-            <a href="/ru/lesson_3/exercises.html" id="exercises">Упражнения</a>
+            <a href="/ru/lesson_3/exercises" id="exercises">Упражнения</a>
         </li>
     </ul>
 `;
@@ -108,16 +108,16 @@ const lesson4SideMenuHTML = `
     <ul>
         <button onclick="window.history.back()">← Назад</button>
         <li>
-            <a href="/ru/lesson_4/overview.html" id="overview">Обзор</a>
+            <a href="/ru/lesson_4/overview" id="overview">Обзор</a>
         </li>
         <li>
-            <a href="/ru/lesson_4/grammar.html" id="grammar">Грамматика</a>
+            <a href="/ru/lesson_4/grammar" id="grammar">Грамматика</a>
         </li>
         <li>
-            <a href="/ru/lesson_4/reading.html" id="reading">Чтение</a>
+            <a href="/ru/lesson_4/reading" id="reading">Чтение</a>
         </li>
         <li>
-            <a href="/ru/lesson_4/exercises.html" id="exercises">Упражнения</a>
+            <a href="/ru/lesson_4/exercises" id="exercises">Упражнения</a>
         </li>
     </ul>
 `;
@@ -158,52 +158,52 @@ switch (group) {
         break;
 }
 switch (pageName) {
-    case "alphabet.html":
+    case "alphabet":
         document.querySelector('#alphabet').style = "background-color: #fdab13;";
         document.querySelector('#alphabet > a').style = "color: #000000ff;";
         break;
-    case "vowels.html":
+    case "vowels":
         document.querySelector('#vowels').style = "background-color: #fdab13;";
         document.querySelector('#vowels > a').style = "color: #000000ff;";
         break;
-    case "consonants.html":
+    case "consonants":
         document.querySelector('#consonants').style = "background-color: #fdab13;";
         document.querySelector('#consonants > a').style = "color: #000000ff;";
         break;
-    case "nouns.html":
+    case "nouns":
         document.querySelector('#nouns').style = "background-color: #fdab13;";
         document.querySelector('#nouns > a').style = "color: #000000ff;";
         break;
-    case "verbs.html":
+    case "verbs":
         document.querySelector('#verbs').style = "background-color: #fdab13;";
         document.querySelector('#verbs > a').style = "color: #000000ff;";
         break;
-    case "adjectives.html":
+    case "adjectives":
         document.querySelector('#adjectives').style = "background-color: #fdab13;";
         document.querySelector('#adjectives > a').style = "color: #000000ff;";
         break;
-    case "numerals.html":
+    case "numerals":
         document.querySelector('#numerals').style = "background-color: #fdab13;";
         document.querySelector('#numerals > a').style = "color: #000000ff;";
         break;
-    case "personal_pronouns.html":
+    case "personal_pronouns":
         document.querySelector('#personal_pronouns').style = "background-color: #fdab13;";
         document.querySelector('#personal_pronouns > a').style = "color: #000000ff;";
         break;
-    case "demontratives.html":
+    case "demontratives":
         document.querySelector('#demontratives').style = "background-color: #fdab13;";
         document.querySelector('#demontratives > a').style = "color: #000000ff;";
         break;
-    case "overview.html":
+    case "overview":
         document.querySelector('#overview').style = "background-color: #fdab13;";
         break;
-    case "grammar.html":
+    case "grammar":
         document.querySelector('#grammar').style = "background-color: #fdab13;";
         break;
-    case "reading.html":
+    case "reading":
         document.querySelector('#reading').style = "background-color: #fdab13;";
         break;
-    case "exercises.html":
+    case "exercises":
         document.querySelector('#exercises').style = "background-color: #fdab13;";
         break
 }

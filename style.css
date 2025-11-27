@@ -57,7 +57,7 @@ header .site_name {
     font-size: 22px;
     text-align: left;
     position: absolute;
-    left: 2px;
+    left: 0px;
     font-size: 28px;
     font-weight: bold;
 }
